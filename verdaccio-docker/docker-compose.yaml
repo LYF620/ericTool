@@ -1,0 +1,25 @@
+services:
+  verdaccio:
+    image: template:1.0.0
+    container_name: eric_verdaccio_root_path
+    ports:
+      - '4873:4873'
+    volumes:
+      - "./storage:/verdaccio/conf/verdaccio/storage"
+    privileged: true
+
+  nginx:
+    restart: always
+    build: conf/nginx
+    ports:
+      - '80:80'
+    volumes:
+      - /www/public
+    volumes_from:
+      - verdaccio
+    links:
+      - verdaccio:verdaccio
+
+volumes:
+  verdaccio:
+    driver: local
