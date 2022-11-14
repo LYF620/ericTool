@@ -1,0 +1,34 @@
+{
+  "name": "eric-utils",
+  "version": "1.0.0",
+  "description": "eric-utils",
+  "main": "index.js",
+  "scripts": {
+    "build": "rollup --config  ",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LYF620/eric-utils.git"
+  },
+  "keywords": [],
+  "author": "Eric",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LYF620/eric-utils/issues"
+  },
+  "homepage": "https://github.com/LYF620/eric-utils#readme",
+  "devDependencies": {
+    "@rollup/plugin-json": "^4.1.0",
+    "@types/react": "^18.0.15",
+    "react": "^17.0.2",
+    "rollup": "^2.73.0",
+    "rollup-plugin-terser": "^7.0.2",
+    "rollup-plugin-uglify": "^6.0.4"
+  },
+  "dependencies": {
+    "rollup-plugin-typescript2": "^0.32.1",
+    "tslib": "^2.4.0",
+    "typescript": "^4.5.4"
+  }
+}
